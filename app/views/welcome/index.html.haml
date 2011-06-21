@@ -10,7 +10,7 @@
         %br
         
       #framey_recorder
-        = render_recorder({ :id => "recorder", :max_time => 10 })
+        = render_recorder({ :id => "recorder", :max_time => 10, :session_data => {:video_uid => @video_uid} })
 
   .bottom
     .popular_title Recent Bleeoos
