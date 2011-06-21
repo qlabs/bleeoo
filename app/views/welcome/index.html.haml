@@ -1,0 +1,20 @@
+.center
+  .top
+    #home_page
+      .title
+        Bleeoo!
+      .description 
+        Remember dialing up? Today's kids have it so easy, with their instant on highspeed and their wifi dohickeys. They'll never know the glory of sneaking into their parent's den and dialing up. They'll never know the sweet, shrill cry of a 9600 baud, or the harmonious, magical doodleeedoo of a 28.8 speed demon. 
+        
+        Someone needs to set things right and teach these whippersnappers some history! This isn't a job for 1 person, or even 100. We need everyone to pitch in and commit their memories to the archive so we can preserve our rich, shrieky history for posterity. Think back to yesteryear and record your best "modem handshake" sound. When we've got enough submissions, we'll put it all together into a beautiful story of connections made and lost and of data flowing over the copper divide. Bleeoooooo, chhhhh kccccctttt... bloododebloodoodebloooo! 
+        %br
+        
+      #framey_recorder
+        = render_recorder({ :id => "recorder", :max_time => 10 })
+
+  .bottom
+    .popular_title Recent Bleeoos
+    .popular_divider
+    #videos
+      = render :partial => "videos"
+

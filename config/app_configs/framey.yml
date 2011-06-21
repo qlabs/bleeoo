@@ -1,0 +1,24 @@
+test:
+  api_host: http://framey.com
+  run_env: production
+  api_key: 7VNKGLJZLKSASZ0FXN2TVSZQU
+  secret: Y3Z1DROQBQIZPCWEQDCF3WWAO
+
+development: 
+  api_host: http://framey.com
+  run_env: production
+  api_key: HJXEMEDEBXKJKUPIWDZ8EDUAP
+  secret: 43BN9IJZRH3G5DGQOSL8VHWIQ  
+
+
+staging:
+  api_host: http://framey.com
+  run_env: production
+  api_key: HJXEMEDEBXKJKUPIWDZ8EDUAP
+  secret: 43BN9IJZRH3G5DGQOSL8VHWIQ
+    
+production:
+  api_host: http://framey.com
+  run_env: production
+  api_key: OW8HOFU3EVVPTSQAFIFTCC1XI
+  secret: VQ8GTTUOCJFIM6QEQK8ZGCKHC

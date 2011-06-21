@@ -1,0 +1,12 @@
+test:
+  user_name: qlabs
+  api_key: R_c5a317dfeee837bb75bfecd81db35d41
+
+
+development: 
+  user_name: qlabs
+  api_key: R_c5a317dfeee837bb75bfecd81db35d41
+
+production:
+  user_name: qlabs
+  api_key: R_c5a317dfeee837bb75bfecd81db35d41

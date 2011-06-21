@@ -1,0 +1,7 @@
+test:
+  consumer_key: qW3CvWLwhFFyl0dfzpApJA
+  consumer_secret: LmXoXSSJqL4hL9CgSfZj9SJFltrZBchORzD9eY7UQ
+
+development:
+  consumer_key: qW3CvWLwhFFyl0dfzpApJA
+  consumer_secret: LmXoXSSJqL4hL9CgSfZj9SJFltrZBchORzD9eY7UQ
