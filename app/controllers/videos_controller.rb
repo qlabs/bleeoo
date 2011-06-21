@@ -73,6 +73,7 @@ class VideosController < ApplicationController
   def callback
     render :text => "" and return unless request.post? && params[:video]
 
+    puts params.inspect
     video_uid = params[:video][:data][:video_uid]
     name = params[:video][:name]
     video_url = params[:video][:url]
