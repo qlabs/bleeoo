@@ -4,6 +4,7 @@
     %link{:rel => "icon", :href => "/images/favicon.png", :type => "image/png"}
     %link{:rel => "shortcut icon", :href => "/images/favicon.png", :type => "image/png"}
     = stylesheet_link_tag :all, "reset-min"
+    = stylesheet_link_tag 'http://fonts.googleapis.com/css?family=Fontdiner+Swanky'        
     = javascript_include_tag :defaults
     = javascript_include_tag "jquery.min.js"
     = javascript_include_tag "swfobject"
@@ -12,18 +13,14 @@
     = javascript_include_tag "jquery.simplyCountable"
     = javascript_include_tag "jquery.popupwindow"
     = javascript_include_tag "http://platform.twitter.com/widgets.js"
-  
-    %title Frtr
+    %title Bleeoo
     = csrf_meta_tag
     
   %body
-    #content
-      .header
-        .center
-          %a{:href => "/"}
-            %img.logo{:src => "/images/logo.png"}
-        .clear
-      .mainContent
-        .center{:id => "bleeoo_body"}
-          = yield
+    #wrapper
+      #header
+        %h1 
+          %a{:href => "/"} Bleeoo 
+      #content
+        = yield
         

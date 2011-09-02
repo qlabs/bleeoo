@@ -1,0 +1,111 @@
+/* line 4, ../../public/stylesheets/sass/application.scss */
+body {
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0;
+}
+/* line 9, ../../public/stylesheets/sass/application.scss */
+body #wrapper {
+  background: url("/images/background.jpg") no-repeat 0 0 #333333;
+  width: 960px;
+  height: 1200px;
+  padding: 0 0 0 30px;
+}
+/* line 15, ../../public/stylesheets/sass/application.scss */
+body #wrapper #header {
+  height: 153px;
+  background: url("/images/logo.gif") no-repeat;
+}
+/* line 20, ../../public/stylesheets/sass/application.scss */
+body #wrapper h1 {
+  margin: 0;
+  padding: 0;
+  visibility: hidden;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+/* line 26, ../../public/stylesheets/sass/application.scss */
+body #wrapper h1 a {
+  color: #ff00ff;
+}
+/* line 31, ../../public/stylesheets/sass/application.scss */
+body #wrapper h2, body #wrapper li {
+  color: #ff00ff;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+/* line 36, ../../public/stylesheets/sass/application.scss */
+body #wrapper h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 42, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main {
+  clear: both;
+  margin: 0 0 50px 0;
+}
+/* line 46, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main p {
+  font-size: 14px;
+  color: #00ff00;
+  text-align: justify;
+}
+/* line 52, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+/* line 57, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main ul li {
+  text-align: center;
+  padding: 10px;
+  margin: 20px;
+  border: 1px solid #00ff00;
+  background: #222;
+  opacity: 0.8;
+  font-size: 16px;
+}
+/* line 68, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main h2, body #wrapper #main li {
+  color: #ff00ff;
+  font-family: 'Fontdiner Swanky', cursive;
+}
+/* line 73, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main h2 {
+  font-size: 16px;
+  font-weight: normal;
+}
+/* line 78, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main h2 a {
+  color: #00ff00;
+  padding: 20px 10px 20px 60px;
+  background: url("/images/play.png") no-repeat 10px center #111111;
+  width: auto;
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  -o-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -khtml-border-radius: 5px;
+  border-radius: 5px;
+}
+/* line 86, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main .col {
+  width: 270px;
+  margin-right: 20px;
+  float: left;
+}
+/* line 92, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main #exposition {
+  margin-bottom: 80px;
+}
+/* line 96, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main #actions.col {
+  width: 340px;
+}
+/* line 99, ../../public/stylesheets/sass/application.scss */
+body #wrapper #main #actions.col h2 {
+  text-align: center;
+}
+/* line 106, ../../public/stylesheets/sass/application.scss */
+body .clear {
+  clear: both;
+}

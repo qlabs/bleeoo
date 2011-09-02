@@ -1,7 +1,7 @@
 source 'http://rubygems.org'
 
 gem 'rails', '3.0.4'
-
+gem 'rack', '1.2.2'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
@@ -25,7 +25,7 @@ gem 'httparty'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
-
+gem "compass", ">= 0.11.beta.7"
 gem "omniauth", "0.2.0"
 gem "authlogic"
 gem "framey"
