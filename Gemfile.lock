@@ -188,6 +188,7 @@ DEPENDENCIES
   rack (= 1.2.2)
   rails (= 3.0.4)
   rspec
+  sass
   sqlite3
   twitter
   uuid
