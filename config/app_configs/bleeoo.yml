@@ -1,0 +1,8 @@
+test:
+  bleeoo_host: http://bleeoo.com
+development: 
+  bleeoo_host: http://bleeoo.com
+staging:
+  bleeoo_host: http://bleeoo.com
+production:
+  bleeoo_host: http://bleeoo.com

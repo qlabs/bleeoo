@@ -13,7 +13,7 @@ end
 
 BITLY_USER = AppConfigs["bitly"]["user_name"]
 BITLY_API_KEY = AppConfigs["bitly"]["api_key"]
-BLEEOO_HOST = AppConfigs["frtr"]["frtr_host"]
+BLEEOO_HOST = AppConfigs["frtr"]["bleeoo_host"]
 
 WillPaginate::ViewHelpers.pagination_options[:previous_label] = "< PREV"
 WillPaginate::ViewHelpers.pagination_options[:next_label] = "NEXT >"

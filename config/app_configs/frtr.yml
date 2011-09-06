@@ -1,8 +1,0 @@
-test:
-  frtr_host: http://frtr.me
-development: 
-  frtr_host: http://frtr.me
-staging:
-  frtr_host: http://frtr.me
-production:
-  frtr_host: http://frtr.me
