@@ -73,28 +73,19 @@ class VideosController < ApplicationController
   def callback
     render :text => "" and return unless request.post? && params[:video]
 
-    puts params.inspect
-    video_uid = params[:video][:data][:video_uid]
-    name = params[:video][:name]
-    video_url = params[:video][:url]
-    thumbnail_url = params[:video][:thumbnail]
-    
-    video = Video.find_by_uid(video_uid)
-    
-    if !video
-      video = Video.create!({
-        :uid => video_uid,
-        :framey_name => name,
-        :framey_video_url => video_url,
-        :framey_thumbnail_url => thumbnail_url
-      })
-    else
-      video.framey_name = name
-      video.framey_video_url = video_url
-      video.framey_thumbnail_url = thumbnail_url
-      video.save
-    end
-    
+    video = Video.create!({
+      :name => params[:video][:name],
+      :filesize => params[:video][:filesize],
+      :duration => params[:video][:duration],
+      :state => params[:video][:state],
+      :views => params[:video][:views],
+      :flv_url => params[:video][:flv_url],
+      :mp4_url => params[:video][:mp4_url],
+      :small_thumbnail_url => params[:video][:small_thumbnail_url],
+      :medium_thumbnail_url => params[:video][:medium_thumbnail_url],          
+      :large_thumbnail_url => params[:video][:large_thumbnail_url]
+    })
+
     render :text => "" and return
   end
   
