@@ -49,10 +49,10 @@ function tweet_state(){
   $('#step_3').addClass("highlighted_instruction");
 }
 
-// function video_published(session_data){
-//   create_new_video(session_data["video_uid"],session_data['user_uid']);
-// 
-// }
+function video_published(session_data){
+  create_new_video(session_data["video_uid"],session_data['user_uid']);
+
+}
 
 function create_new_video(video_uid, user_uid){
   $.ajax({
@@ -186,8 +186,9 @@ function prepare_recorder_page(){
     
   
   Framey.observe("publishSucceeded", function(session_data){
-    //todo: update the UI here
-  });
+      video_published(session_data);
+      tweet_state();
+    });
 }
 
 function like_video(name){
