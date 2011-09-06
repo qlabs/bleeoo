@@ -115,26 +115,26 @@ body #wrapper #main #actions.col {
 body #wrapper #main #actions.col h2 {
   text-align: center;
 }
-/* line 113, ../../app/stylesheets/application.scss */
-body #wrapper #main #video_info {
+/* line 115, ../../app/stylesheets/application.scss */
+body #wrapper #video_info {
   color: #f00;
 }
-/* line 116, ../../app/stylesheets/application.scss */
-body #wrapper #main #player_wrapper {
+/* line 118, ../../app/stylesheets/application.scss */
+body #wrapper #player_wrapper {
   margin-left: 240px;
 }
-/* line 121, ../../app/stylesheets/application.scss */
+/* line 122, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container {
   margin-left: 111px;
 }
-/* line 123, ../../app/stylesheets/application.scss */
+/* line 124, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail {
   margin-top: 34px;
   position: relative;
   float: left;
   margin-right: 50px;
 }
-/* line 128, ../../app/stylesheets/application.scss */
+/* line 129, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail a {
   width: 136px;
   height: 102px;
@@ -146,15 +146,15 @@ body #wrapper #secondary #videos_container .video_thumbnail a {
   top: 0px;
   opacity: 0.5;
 }
-/* line 138, ../../app/stylesheets/application.scss */
+/* line 139, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail a:hover {
   opacity: 1.0;
 }
-/* line 143, ../../app/stylesheets/application.scss */
+/* line 144, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail img {
   width: 136px;
 }
-/* line 151, ../../app/stylesheets/application.scss */
+/* line 152, ../../app/stylesheets/application.scss */
 body .clear {
   clear: both;
 }
