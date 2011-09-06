@@ -1,0 +1,121 @@
+@import "mixins";
+@import "compass/css3/border-radius";
+
+body {
+  font-family:sans-serif;
+  padding:0;
+  margin:0;
+  background-color:#111;
+  
+  #wrapper {
+    margin-left:auto;
+    margin-right:auto;
+    background:url('/images/background.jpg') no-repeat 0 0;
+    width:940px;
+    height:1200px;
+    padding:0 0 0 30px;
+
+    #header {
+      height:153px;
+      background:url('/images/logo.gif') no-repeat;
+      margin:0 0 30px 0;
+    }
+
+    h1 {
+      margin:0;
+      padding:0;
+      visibility:hidden;
+      font-family: 'Fontdiner Swanky', cursive;
+      
+      a {
+        color:#ff00ff;
+      }
+    }
+  
+    h2, li {
+      color:#ff00ff;
+      font-family: 'Fontdiner Swanky', cursive;
+    }
+
+    h2 {
+      margin:0;
+      font-size:16px;
+      font-weight:normal;
+    }
+
+
+    #main {
+      clear:both;
+      margin:0 0 50px 0;
+
+      p {
+        font-size:13px;
+        line-height:130%;
+        color:#00ff00;
+        text-align:justify;
+      }
+
+      ul {
+        list-style:none;
+        margin:0;
+        padding:0;
+
+        li {
+          text-align:center;
+          padding: 10px;
+          margin:0 20px 20px 20px;
+          border:1px solid #00ff00;
+          background:#222;
+          opacity:0.8;
+          font-size:16px;
+        }
+      }
+
+      h2, li {
+        color:#ff00ff;
+        font-family: 'Fontdiner Swanky', cursive;
+      }
+
+      h2 {
+        font-size:16px;
+        font-weight:normal;
+
+        a {
+          color:#00ff00;
+          padding:20px 10px 20px 60px;
+          background:url('/images/play.png') no-repeat 10px center #111;
+          width:auto;
+          @include border-radius(5px, 5px);
+        }
+        
+        a:hover {
+          background-color:#ff00ff;
+        }
+      }
+
+      .col {
+        width:270px;
+        margin-right:20px;
+        float:left;
+      }
+      
+      #exposition {
+        margin-bottom:80px;
+      }
+
+      #actions.col {
+        width:320px;
+
+        h2{
+          text-align:center;
+        }
+      }
+    }
+  }
+
+  .clear {
+    clear:both;
+  }
+
+}
+

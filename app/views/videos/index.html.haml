@@ -7,23 +7,16 @@
           #message_area 
             #flash_message
             #flash_warning
-      - @videos.each do |video|
-        .video_info{:id => "video_#{video.uid}"}
-          .video_thumbnail
-            %a{:href => "/videos/#{video.uid}"}
-              = image_tag(video.framey_thumbnail_url)    
-          .video_twitter_text
-            = video.twitter_text 
-          .video_age
-            = time_ago_in_words video.created_at
-            ago
-          .video_action
-            %a{:href => "javascript: delete_video('#{video.uid}');"}
-              delete              
-          .video_stats
-            .num
-              Views:
-              = video.views
+      #recent
+        - @videos.each do |video|
+          .video_info{:id => "video_#{video.uid}"}
+            .video_thumbnail
+              %a{:href => "/videos/#{video.uid}"}
+                = image_tag(video.framey_thumbnail_url)                
+            .video_stats
+              .num
+                Views:
+                = video.views
 
   .clear
 .bottom
