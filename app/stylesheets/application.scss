@@ -209,5 +209,25 @@ body {
     clear:both;
   }
 
+  .video_thumbnail_grid{
+    margin-top:34px;
+    position:relative;
+    margin-right:50px;
+    a{
+      width:136px;
+      height:102px;
+      background:url('/images/play_overlay.png') 80px 56px no-repeat;
+      background-size:50% 50%;
+      top:0px;
+      opacity:0.5;
+      &:hover{
+        opacity:1.0;
+      }
+    }
+    
+    img{
+      width:136px;
+    }
+  }
 }
 

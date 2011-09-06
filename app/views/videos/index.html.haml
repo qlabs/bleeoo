@@ -9,7 +9,7 @@
             #flash_warning
       - @videos.each do |video|
         .video_info{:id => "video_#{video.uid}"}
-          .video_thumbnail
+          .video_thumbnail_grid
             %a{:href => "/videos/#{video.uid}"}
               = image_tag(video.framey_thumbnail_url)                
           .video_stats
