@@ -6,7 +6,11 @@ body {
   padding:0;
   margin:0;
   background-color:#111;
-  
+  color:#fff;
+  a{
+    text-decoration:none;
+    color:#f0f;
+  }
   #wrapper {
     margin-left:auto;
     margin-right:auto;
@@ -75,24 +79,34 @@ body {
         color:#ff00ff;
         font-family: 'Fontdiner Swanky', cursive;
       }
-
-      h2 {
-        font-size:16px;
-        font-weight:normal;
-
-        a {
-          color:#00ff00;
-          padding:20px 10px 20px 60px;
-          background:url('/images/play.png') no-repeat 10px center #111;
-          width:auto;
-          @include border-radius(5px, 5px);
-        }
-        
-        a:hover {
-          background-color:#ff00ff;
+      
+      h2{
+        a{
+          text-decoration:none;
+          font-size:24px;
+          color:#f0f;
         }
       }
 
+      #replay{
+        h2 {
+          font-size:16px;
+          font-weight:normal;
+
+          a {
+            color:#00ff00;
+            padding:20px 10px 20px 60px;
+            background:url('/images/play.png') no-repeat 10px center #111;
+            width:auto;
+            @include border-radius(5px, 5px);
+          }
+        
+          a:hover {
+            background-color:#ff00ff;
+          }
+        }
+      }
+      
       .col {
         width:270px;
         margin-right:20px;
@@ -101,8 +115,28 @@ body {
       
       #exposition {
         margin-bottom:80px;
+        p{
+          font-size:14px;
+        }
       }
-
+      #framey_recorder{
+        height:344px;
+      }
+      #tweet_it{
+        font-size:36px;
+        margin-left:80px;
+        color:#f0f;
+        font-family: 'Fontdiner Swanky', cursive;
+      }
+      #bleeoo_phonetic{
+        position:absolute;
+        top:530px;
+        width:350px;
+        
+      }
+      #bleeoo_post{
+        height:344px;
+      }
       #actions.col {
         width:320px;
 
@@ -112,12 +146,34 @@ body {
       }
       
     }
-    #video_info{
+    #recent{
+      position:absolute;
+      top:626px;
+      width:900px;
+    }
+    #see_all{
+      float:right;
+      margin-top:60px;
+      margin-right:120px;
+      font-weight:bold;
+      color:#f0f;
+      text-decoration:none;
+    }
+    #video_age{
       color:#f00;
     }
     #player_wrapper{
       margin-left:240px;
     }
+    #about_this_video{
+      color:#0f0;
+      font-weight:bold;
+      width:550px;
+      a{
+        color:#f0f;
+      }
+    }
+    
     #secondary{
       #videos_container{
         margin-left:111px;

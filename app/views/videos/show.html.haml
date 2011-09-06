@@ -14,7 +14,20 @@
         .clear
     -else
       #processing_video
-        This video is being processed, please reload the page in a few seconds.    
+        This video is being processed, please reload the page in a few seconds.
+        
+    #about_this_video
+      %p
+        This video was recorded as part of the 
+        %a{:href => "/"}
+          "Bleeoo Project"
+        to preserve an oral history of our digital past. 
+      %p
+        Bleeoo is powered by 
+        %a{:href=>"http://framey.com"} Framey
+        which makes it easy to add video recording to your site.
+      %a{:href=>"/"}
+        Record your own bleeoo!
   .clear
 
 .bottom

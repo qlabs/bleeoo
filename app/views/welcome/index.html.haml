@@ -1,18 +1,29 @@
 #main
   #description.col
-    %h2 Remember dialing up?
+    %h2 
+      %a{:href=>"http://twitter.com/#!/search/realtime/%23ripdialup"}#RIPdialup
     #exposition
-      %p Today's kids have it so easy, with their always-on highspeed and their wifi dohickeys. They'll never know the glory of sneaking into their parent's den and dialing up. They'll never know the sweet, shrill cry of a 9600 baud, or the harmonious, magical doodleeedoo of a 28.8 speed demon. 
-      %p Think back to yesteryear and record your best "modem handshake" sound.
-      %p When we've got enough submissions, we'll put it all together into a beautiful story of connections made and lost and of data flowing over the copper divide.
-    #replay
-      %h2
-        %a Refresh your memory
+      %p Remember the glory of dialing up? 
+      %p Kids today won't know the shrill cry of a 9600 baud, or the magical "doodleeedoo" of a 28.8 modem. 
+      %p Help preserve our digital history. Join us in recording your best impression of a "modem handshake" sound.
+    / #replay
+    /       %h2
+    /         %a Refresh your memory
 
   #actions.col
     #framey_recorder
       = render_recorder({ :id => "recorder", :max_time => 10, :session_data => {:video_uid => @video_uid} })
-    %h2 Bleeoooooo, chhhhh keeeeetttt... bloododebloodoodebloooo!
+    %h2#bleeoo_phonetic Bleeoooooo, chhhhh keeeeetttt... bloododebloodoodebloooo!
+    #bleeoo_post{}
+      #h2 Share your Bleeoo!
+      %p 
+        Your recording is processing and will appear 
+        %a#permalink{:href=>"#"}
+          here 
+        soon. 
+      %p Share your recording with your friends and help spread the word about this important historical preservation project!
+      %a#tweet_it{:href=>"#"}
+        Tweet it
 
   #instructions.col
     %ul

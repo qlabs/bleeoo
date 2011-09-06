@@ -7,5 +7,5 @@
         %a{:href => "/videos/#{video.uid}"}
               
 .clear          
-.pagination
-  = will_paginate @videos, :class => 'pagination ajax'
+%a#see_all{:href => "/videos"}
+  See all

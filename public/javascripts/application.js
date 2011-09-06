@@ -127,7 +127,7 @@ function new_video(){
 }
 
 function reset_content(data){
-  $('#framey_post').hide();
+  $('#bleeoo_post').hide();
   show_recorder();
 
   Framey.setSessionData('recorder', "video_uid", data['video_uid']);
@@ -135,15 +135,10 @@ function reset_content(data){
 }
 
 function display_tweet_textarea(short_url){
-  $('#framey_post').show();
-  $('#twitter_text').val("Look at what I recorded with @frtr_me "+short_url);
-  $('#twitter_text').simplyCountable({
-  		counter: '#counter',
-          countType: 'characters',
-          maxCount: 140,
-          countDirection: 'up',
-          strictMax: true
-  		  }); 
+  $('#framey_recorder').fadeOut(250, function(){ $('#bleeoo_post').fadeIn(500); });
+  var twittertext = encodeURIComponent("Remember dial up? I just recorded a video of the dial up sound to preserve history. " + short_url + " #RIPDialUp #NYTM")
+  $('#tweet_it').attr("href", "http://twitter.com/intent/tweet?text=" + twittertext);
+  $('#permalink').attr("href", short_url);
 }
 
 function show_recorder(){
@@ -169,7 +164,7 @@ function prepare_recorder_page(){
           countDirection: 'up',
           strictMax: true
   		  });
-  $('#framey_post').hide();
+  $('#bleeoo_post').hide();
 
   Framey.observe("stopClicked", function(session_data){
     publish_state();
