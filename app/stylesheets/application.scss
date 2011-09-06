@@ -211,18 +211,41 @@ body {
       width:960px;
       margin-left:-10px;
       #likeit{
-        position:relative;
+        position:absolute;
         left:500px;
         top:20px;
       }
     }
     #powered_by{
-      height:100px;
-      background:#333;
+      height:75px;
+      background:url('/images/bleeoo_footer.png') 0 0  #333;
       width:960px;
       margin-left:-10px;
       position:absolute;
       top:1120px;
+      a{
+        width:500px;
+        display:block;
+        position:relative;
+      }
+      #pblogo{
+        float:left;
+      }
+      #pb_text{
+        position:absolute;
+        top:34px;
+        font-weight:bold;
+        left:200px;
+        font-size:18px;
+        color:#900;
+      }
+      #pb_moretext{
+        position:absolute;
+        top:55px;
+        left:200px;
+        font-size:10px;
+        color:#fff;
+      }
     }
   }
 
