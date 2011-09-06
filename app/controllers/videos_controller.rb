@@ -77,7 +77,7 @@ class VideosController < ApplicationController
     video_uid = params[:video][:data][:video_uid]
     name = params[:video][:name]
     video_url = params[:video][:flv_url]
-    thumbnail_url = params[:video][:large_thumbnail]
+    thumbnail_url = params[:video][:large_thumbnail_url]
     
     video = Video.find_by_uid(video_uid)
     
