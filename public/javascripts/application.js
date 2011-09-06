@@ -136,7 +136,7 @@ function reset_content(data){
 
 function display_tweet_textarea(short_url){
   $('#framey_recorder').fadeOut(250, function(){ $('#bleeoo_post').fadeIn(500); });
-  var twittertext = encodeURIComponent("Remember dial up? I just recorded a video of the dial up sound to preserve history. " + short_url + " #RIPDialUp #NYTM")
+  var twittertext = encodeURIComponent("Remember dial up? I just recorded a video of the dial up sound to preserve history. " + short_url + " #RIPdialup #NYTM")
   $('#tweet_it').attr("href", "http://twitter.com/intent/tweet?text=" + twittertext);
   $('#permalink').attr("href", short_url);
 }

@@ -17,7 +17,7 @@ body {
     background:url('/images/background.jpg') no-repeat 0 0;
     width:940px;
     height:1200px;
-    padding:0 0 0 30px;
+    padding:0 10px 0 10px;
 
     #header {
       height:153px;
@@ -176,7 +176,7 @@ body {
     
     #secondary{
       #videos_container{
-        margin-left:111px;
+        margin-left:131px;
         .video_thumbnail{
           margin-top:34px;
           position:relative;
@@ -202,6 +202,27 @@ body {
           }
         }
       }
+    }
+    #share{
+      background:url('/images/share_the_bleeoo.png') 10px 10px no-repeat #284484;
+      height:230px;
+      position:absolute;
+      top:890px;
+      width:960px;
+      margin-left:-10px;
+      #likeit{
+        position:relative;
+        left:500px;
+        top:20px;
+      }
+    }
+    #powered_by{
+      height:100px;
+      background:#333;
+      width:960px;
+      margin-left:-10px;
+      position:absolute;
+      top:1120px;
     }
   }
 
