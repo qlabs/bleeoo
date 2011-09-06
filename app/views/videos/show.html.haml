@@ -1,19 +1,17 @@
 .top
   #video_show
     #video_info
-      #video_screen
-        = image_tag "/images/screen.png"
-      #video_age
-        = time_ago_in_words @video.created_at
-        ago
-      .clear
-
     - if @video.framey_name
       #player_wrapper
         %span 
           = render_player({ :video_url => video_source_url(@video.uid), :thumbnail_url => video_thumbnail_url(@video.uid),
       })
         %br
+        #video_age
+          recorded 
+          = time_ago_in_words @video.created_at
+          ago
+        .clear
     -else
       #processing_video
         This video is being processed, please reload the page in a few seconds.    
