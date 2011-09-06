@@ -12,6 +12,15 @@ body a {
   color: #f0f;
 }
 /* line 14, ../../app/stylesheets/application.scss */
+body #logolink {
+  width: 940px;
+  height: 153px;
+  display: block;
+  cursor: hand;
+  z-index: 1000;
+  position: absolute;
+}
+/* line 22, ../../app/stylesheets/application.scss */
 body #wrapper {
   margin-left: auto;
   margin-right: auto;
@@ -20,53 +29,53 @@ body #wrapper {
   height: 1200px;
   padding: 0 10px 0 10px;
 }
-/* line 22, ../../app/stylesheets/application.scss */
+/* line 30, ../../app/stylesheets/application.scss */
 body #wrapper #header {
   height: 153px;
   background: url("/images/logo.gif") no-repeat;
   margin: 0 0 30px 0;
 }
-/* line 28, ../../app/stylesheets/application.scss */
+/* line 36, ../../app/stylesheets/application.scss */
 body #wrapper h1 {
   margin: 0;
   padding: 0;
-  visibility: hidden;
   font-family: 'Fontdiner Swanky', cursive;
+  height: 153px;
 }
-/* line 34, ../../app/stylesheets/application.scss */
+/* line 41, ../../app/stylesheets/application.scss */
 body #wrapper h1 a {
   color: #ff00ff;
 }
-/* line 39, ../../app/stylesheets/application.scss */
+/* line 46, ../../app/stylesheets/application.scss */
 body #wrapper h2, body #wrapper li {
   color: #ff00ff;
   font-family: 'Fontdiner Swanky', cursive;
 }
-/* line 44, ../../app/stylesheets/application.scss */
+/* line 51, ../../app/stylesheets/application.scss */
 body #wrapper h2 {
   margin: 0;
   font-size: 16px;
   font-weight: normal;
 }
-/* line 51, ../../app/stylesheets/application.scss */
+/* line 58, ../../app/stylesheets/application.scss */
 body #wrapper #main {
   clear: both;
   margin: 0 0 50px 0;
 }
-/* line 55, ../../app/stylesheets/application.scss */
+/* line 62, ../../app/stylesheets/application.scss */
 body #wrapper #main p {
   font-size: 13px;
   line-height: 130%;
   color: #00ff00;
   text-align: justify;
 }
-/* line 62, ../../app/stylesheets/application.scss */
+/* line 69, ../../app/stylesheets/application.scss */
 body #wrapper #main ul {
   list-style: none;
   margin: 0;
   padding: 0;
 }
-/* line 67, ../../app/stylesheets/application.scss */
+/* line 74, ../../app/stylesheets/application.scss */
 body #wrapper #main ul li {
   text-align: center;
   padding: 10px;
@@ -76,23 +85,23 @@ body #wrapper #main ul li {
   opacity: 0.8;
   font-size: 16px;
 }
-/* line 78, ../../app/stylesheets/application.scss */
+/* line 85, ../../app/stylesheets/application.scss */
 body #wrapper #main h2, body #wrapper #main li {
   color: #ff00ff;
   font-family: 'Fontdiner Swanky', cursive;
 }
-/* line 84, ../../app/stylesheets/application.scss */
+/* line 91, ../../app/stylesheets/application.scss */
 body #wrapper #main h2 a {
   text-decoration: none;
   font-size: 24px;
   color: #f0f;
 }
-/* line 92, ../../app/stylesheets/application.scss */
+/* line 99, ../../app/stylesheets/application.scss */
 body #wrapper #main #replay h2 {
   font-size: 16px;
   font-weight: normal;
 }
-/* line 96, ../../app/stylesheets/application.scss */
+/* line 103, ../../app/stylesheets/application.scss */
 body #wrapper #main #replay h2 a {
   color: #00ff00;
   padding: 20px 10px 20px 60px;
@@ -105,60 +114,60 @@ body #wrapper #main #replay h2 a {
   -khtml-border-radius: 5px / 5px;
   border-radius: 5px / 5px;
 }
-/* line 104, ../../app/stylesheets/application.scss */
+/* line 111, ../../app/stylesheets/application.scss */
 body #wrapper #main #replay h2 a:hover {
   background-color: #ff00ff;
 }
-/* line 110, ../../app/stylesheets/application.scss */
+/* line 117, ../../app/stylesheets/application.scss */
 body #wrapper #main .col {
   width: 270px;
   margin-right: 20px;
   float: left;
 }
-/* line 116, ../../app/stylesheets/application.scss */
+/* line 123, ../../app/stylesheets/application.scss */
 body #wrapper #main #exposition {
   margin-bottom: 80px;
 }
-/* line 118, ../../app/stylesheets/application.scss */
+/* line 125, ../../app/stylesheets/application.scss */
 body #wrapper #main #exposition p {
   font-size: 14px;
 }
-/* line 122, ../../app/stylesheets/application.scss */
+/* line 129, ../../app/stylesheets/application.scss */
 body #wrapper #main #framey_recorder {
   height: 344px;
 }
-/* line 125, ../../app/stylesheets/application.scss */
+/* line 132, ../../app/stylesheets/application.scss */
 body #wrapper #main #tweet_it {
   font-size: 36px;
   margin-left: 80px;
   color: #f0f;
   font-family: 'Fontdiner Swanky', cursive;
 }
-/* line 131, ../../app/stylesheets/application.scss */
+/* line 138, ../../app/stylesheets/application.scss */
 body #wrapper #main #bleeoo_phonetic {
   position: absolute;
   top: 530px;
   width: 350px;
 }
-/* line 137, ../../app/stylesheets/application.scss */
+/* line 144, ../../app/stylesheets/application.scss */
 body #wrapper #main #bleeoo_post {
   height: 344px;
 }
-/* line 140, ../../app/stylesheets/application.scss */
+/* line 147, ../../app/stylesheets/application.scss */
 body #wrapper #main #actions.col {
   width: 320px;
 }
-/* line 143, ../../app/stylesheets/application.scss */
+/* line 150, ../../app/stylesheets/application.scss */
 body #wrapper #main #actions.col h2 {
   text-align: center;
 }
-/* line 149, ../../app/stylesheets/application.scss */
+/* line 156, ../../app/stylesheets/application.scss */
 body #wrapper #recent {
   position: absolute;
   top: 626px;
   width: 900px;
 }
-/* line 154, ../../app/stylesheets/application.scss */
+/* line 161, ../../app/stylesheets/application.scss */
 body #wrapper #see_all {
   float: right;
   margin-top: 60px;
@@ -167,36 +176,36 @@ body #wrapper #see_all {
   color: #f0f;
   text-decoration: none;
 }
-/* line 162, ../../app/stylesheets/application.scss */
+/* line 169, ../../app/stylesheets/application.scss */
 body #wrapper #video_age {
   color: #f00;
 }
-/* line 165, ../../app/stylesheets/application.scss */
+/* line 172, ../../app/stylesheets/application.scss */
 body #wrapper #player_wrapper {
   margin-left: 240px;
 }
-/* line 168, ../../app/stylesheets/application.scss */
+/* line 175, ../../app/stylesheets/application.scss */
 body #wrapper #about_this_video {
   color: #0f0;
   font-weight: bold;
   width: 550px;
 }
-/* line 172, ../../app/stylesheets/application.scss */
+/* line 179, ../../app/stylesheets/application.scss */
 body #wrapper #about_this_video a {
   color: #f0f;
 }
-/* line 178, ../../app/stylesheets/application.scss */
+/* line 185, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container {
   margin-left: 131px;
 }
-/* line 180, ../../app/stylesheets/application.scss */
+/* line 187, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail {
   margin-top: 34px;
   position: relative;
   float: left;
   margin-right: 50px;
 }
-/* line 185, ../../app/stylesheets/application.scss */
+/* line 192, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail a {
   width: 136px;
   height: 102px;
@@ -208,15 +217,15 @@ body #wrapper #secondary #videos_container .video_thumbnail a {
   top: 0px;
   opacity: 0.5;
 }
-/* line 195, ../../app/stylesheets/application.scss */
+/* line 202, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail a:hover {
   opacity: 1.0;
 }
-/* line 200, ../../app/stylesheets/application.scss */
+/* line 207, ../../app/stylesheets/application.scss */
 body #wrapper #secondary #videos_container .video_thumbnail img {
   width: 136px;
 }
-/* line 206, ../../app/stylesheets/application.scss */
+/* line 213, ../../app/stylesheets/application.scss */
 body #wrapper #share {
   background: url("/images/share_the_bleeoo.png") 10px 10px no-repeat #284484;
   height: 230px;
@@ -225,13 +234,13 @@ body #wrapper #share {
   width: 960px;
   margin-left: -10px;
 }
-/* line 213, ../../app/stylesheets/application.scss */
+/* line 220, ../../app/stylesheets/application.scss */
 body #wrapper #share #likeit {
   position: absolute;
   left: 500px;
   top: 20px;
 }
-/* line 219, ../../app/stylesheets/application.scss */
+/* line 226, ../../app/stylesheets/application.scss */
 body #wrapper #powered_by {
   height: 75px;
   background: url("/images/bleeoo_footer.png") 0 0 #333333;
@@ -240,17 +249,17 @@ body #wrapper #powered_by {
   position: absolute;
   top: 1120px;
 }
-/* line 226, ../../app/stylesheets/application.scss */
+/* line 233, ../../app/stylesheets/application.scss */
 body #wrapper #powered_by a {
   width: 500px;
   display: block;
   position: relative;
 }
-/* line 231, ../../app/stylesheets/application.scss */
+/* line 238, ../../app/stylesheets/application.scss */
 body #wrapper #powered_by #pblogo {
   float: left;
 }
-/* line 234, ../../app/stylesheets/application.scss */
+/* line 241, ../../app/stylesheets/application.scss */
 body #wrapper #powered_by #pb_text {
   position: absolute;
   top: 34px;
@@ -259,7 +268,7 @@ body #wrapper #powered_by #pb_text {
   font-size: 18px;
   color: #900;
 }
-/* line 242, ../../app/stylesheets/application.scss */
+/* line 249, ../../app/stylesheets/application.scss */
 body #wrapper #powered_by #pb_moretext {
   position: absolute;
   top: 55px;
@@ -267,18 +276,18 @@ body #wrapper #powered_by #pb_moretext {
   font-size: 10px;
   color: #fff;
 }
-/* line 252, ../../app/stylesheets/application.scss */
+/* line 259, ../../app/stylesheets/application.scss */
 body .clear {
   clear: both;
 }
-/* line 256, ../../app/stylesheets/application.scss */
+/* line 263, ../../app/stylesheets/application.scss */
 body .video_thumbnail_grid {
   margin-top: 34px;
   position: relative;
   margin-right: 50px;
   width: 700px;
 }
-/* line 261, ../../app/stylesheets/application.scss */
+/* line 268, ../../app/stylesheets/application.scss */
 body .video_thumbnail_grid a {
   width: 136px;
   height: 102px;
@@ -289,11 +298,11 @@ body .video_thumbnail_grid a {
   float: left;
   margin: 10px;
 }
-/* line 270, ../../app/stylesheets/application.scss */
+/* line 277, ../../app/stylesheets/application.scss */
 body .video_thumbnail_grid a:hover {
   opacity: 1.0;
 }
-/* line 275, ../../app/stylesheets/application.scss */
+/* line 282, ../../app/stylesheets/application.scss */
 body .video_thumbnail_grid img {
   width: 136px;
 }

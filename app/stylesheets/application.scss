@@ -11,6 +11,14 @@ body {
     text-decoration:none;
     color:#f0f;
   }
+  #logolink{
+    width:940px;
+    height:153px;
+    display:block;
+    cursor:hand;
+    z-index:1000;
+    position:absolute;
+  }
   #wrapper {
     margin-left:auto;
     margin-right:auto;
@@ -28,9 +36,8 @@ body {
     h1 {
       margin:0;
       padding:0;
-      visibility:hidden;
       font-family: 'Fontdiner Swanky', cursive;
-      
+      height:153px;
       a {
         color:#ff00ff;
       }
