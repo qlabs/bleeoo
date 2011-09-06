@@ -115,7 +115,38 @@ body #wrapper #main #actions.col {
 body #wrapper #main #actions.col h2 {
   text-align: center;
 }
-/* line 116, ../../app/stylesheets/application.scss */
+/* line 115, ../../app/stylesheets/application.scss */
+body #wrapper #secondary #videos_container {
+  margin-left: 111px;
+}
+/* line 117, ../../app/stylesheets/application.scss */
+body #wrapper #secondary #videos_container .video_thumbnail {
+  margin-top: 34px;
+  position: relative;
+  float: left;
+  margin-right: 50px;
+}
+/* line 122, ../../app/stylesheets/application.scss */
+body #wrapper #secondary #videos_container .video_thumbnail a {
+  width: 136px;
+  height: 102px;
+  background: url("/images/play_overlay.png") 80px 56px no-repeat;
+  background-size: 50% 50%;
+  position: absolute;
+  display: block;
+  z-index: 100;
+  top: 0px;
+  opacity: 0.5;
+}
+/* line 132, ../../app/stylesheets/application.scss */
+body #wrapper #secondary #videos_container .video_thumbnail a:hover {
+  opacity: 1.0;
+}
+/* line 137, ../../app/stylesheets/application.scss */
+body #wrapper #secondary #videos_container .video_thumbnail img {
+  width: 136px;
+}
+/* line 145, ../../app/stylesheets/application.scss */
 body .clear {
   clear: both;
 }

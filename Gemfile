@@ -25,7 +25,7 @@ gem 'httparty'
 # gem 'nokogiri'
 # gem 'sqlite3-ruby', :require => 'sqlite3'
 # gem 'aws-s3', :require => 'aws/s3'
-gem "compass", ">= 0.11.beta.7"
+#gem "compass", ">= 0.11.beta.7"
 gem "omniauth", "0.2.0"
 gem "authlogic"
 gem "framey"
