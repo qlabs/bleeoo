@@ -257,13 +257,16 @@ body {
     margin-top:34px;
     position:relative;
     margin-right:50px;
+    width:700px;
     a{
       width:136px;
       height:102px;
       background:url('/images/play_overlay.png') 80px 56px no-repeat;
       background-size:50% 50%;
       top:0px;
-      opacity:0.5;
+      opacity:0.75;
+      float:left;
+      margin:10px;
       &:hover{
         opacity:1.0;
       }

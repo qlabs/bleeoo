@@ -1,7 +1,7 @@
 .top
   #videos
     #videos_display  
-      .video_list_header Video List:
+      .video_list_header Previously Recorded Bleeoos:
       #framey_content
         %div{:style => "margin-left: 250px; margin-top: 20px"}
           #message_area 
@@ -11,15 +11,11 @@
         .video_info{:id => "video_#{video.uid}"}
           .video_thumbnail_grid
             %a{:href => "/videos/#{video.uid}"}
-              = image_tag(video.framey_thumbnail_url)                
-          .video_stats
-            .num
-              Views:
-              = video.views
+              = image_tag(video.framey_thumbnail_url)       
 
   .clear
 .bottom
   #paginator
-    = will_paginate @videos      
+    = will_paginate @videos     
 .clear
 

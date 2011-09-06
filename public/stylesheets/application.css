@@ -276,21 +276,24 @@ body .video_thumbnail_grid {
   margin-top: 34px;
   position: relative;
   margin-right: 50px;
+  width: 700px;
 }
-/* line 260, ../../app/stylesheets/application.scss */
+/* line 261, ../../app/stylesheets/application.scss */
 body .video_thumbnail_grid a {
   width: 136px;
   height: 102px;
   background: url("/images/play_overlay.png") 80px 56px no-repeat;
   background-size: 50% 50%;
   top: 0px;
-  opacity: 0.5;
+  opacity: 0.75;
+  float: left;
+  margin: 10px;
 }
-/* line 267, ../../app/stylesheets/application.scss */
+/* line 270, ../../app/stylesheets/application.scss */
 body .video_thumbnail_grid a:hover {
   opacity: 1.0;
 }
-/* line 272, ../../app/stylesheets/application.scss */
+/* line 275, ../../app/stylesheets/application.scss */
 body .video_thumbnail_grid img {
   width: 136px;
 }

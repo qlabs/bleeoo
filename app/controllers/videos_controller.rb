@@ -3,7 +3,7 @@ class VideosController < ApplicationController
   
   
   def index    
-    @videos = Video.paginate :page => (params[:page] || 1) , :order => 'created_at DESC', :per_page => 10
+    @videos = Video.paginate :page => (params[:page] || 1) , :order => 'created_at DESC', :per_page => 12
   end
   
   def delete
