@@ -94,7 +94,7 @@ class VideosController < ApplicationController
       video.framey_name = name
       video.framey_video_url = video_url
       video.framey_thumbnail_url = thumbnail_url
-      video.is_published = true
+      video.published = true
       video.save
     end
     
