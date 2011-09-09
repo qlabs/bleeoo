@@ -3,7 +3,7 @@ class VideosController < ApplicationController
   
   
   def index    
-    @videos = Video.paginate :page => (params[:page] || 1) , :order => 'created_at DESC', :per_page => 12
+    @videos = Video.published.paginate :page => (params[:page] || 1) , :order => 'created_at DESC', :per_page => 12
   end
   
   def delete
@@ -94,6 +94,7 @@ class VideosController < ApplicationController
       video.framey_name = name
       video.framey_video_url = video_url
       video.framey_thumbnail_url = thumbnail_url
+      video.published = true
       video.save
     end
     

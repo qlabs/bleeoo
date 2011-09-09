@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110519143339) do
+ActiveRecord::Schema.define(:version => 20110909183418) do
 
   create_table "videos", :force => true do |t|
     t.string   "uid"
@@ -22,6 +22,7 @@ ActiveRecord::Schema.define(:version => 20110519143339) do
     t.datetime "updated_at"
     t.string   "title"
     t.string   "short_link"
+    t.boolean  "published",            :default => false
   end
 
 end
