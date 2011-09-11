@@ -1,8 +1,8 @@
 %h3 Enter the video id of the user you want to block. This will unpublish all videos from that IP and block any new videos.
 = form_tag "/blacklists" do
-  %label{:for => "uid"} Video UID:
+  %label{:for => "uid"} Offending Video UID:
   %input#uid{:type => "textfield", :name => "uid"}
-  %input#retrieve{:type => "submit", :name => "submit"}
+  %input#retrieve{:type => "submit", :name => "submit", :onclick => "return confirm('This action will block the IP associated with the video and unpublish all videos from that IP. Are you Sure?')"}
 
 
 %h4 Blacklisted:
