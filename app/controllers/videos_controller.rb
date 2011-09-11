@@ -1,6 +1,6 @@
 class VideosController < ApplicationController
   before_filter :fetch_video, :except => [:callback,:index,:create, :like, :tweet]
-  # before_filter :block_blacklisted_ips, :only => [:create]
+  before_filter :block_blacklisted_ips, :only => [:create]
   
   def index    
     @videos = Video.is_published.paginate :page => (params[:page] || 1) , :order => 'created_at DESC', :per_page => 12
