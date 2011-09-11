@@ -1,6 +1,7 @@
 Bleeoo::Application.routes.draw do
   
   resources :blacklists
+  match "/lookup" => "blacklists#lookup"
 
   # resources :videos, :only => [:index,:create,:show] do
   #   member do

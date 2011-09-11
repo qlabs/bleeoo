@@ -19,7 +19,8 @@ class BlacklistsController < ApplicationController
   # GET /blacklists/1.xml
   def show
     @blacklist = Blacklist.find(params[:id])
-
+    @videos = Video.find_all_by_remote_ip(@blacklist.remote_ip)
+    
     respond_to do |format|
       format.html # show.html.erb
       format.xml  { render :xml => @blacklist }
@@ -30,7 +31,7 @@ class BlacklistsController < ApplicationController
   # GET /blacklists/new.xml
   def new
     @blacklist = Blacklist.new
-
+    
     respond_to do |format|
       format.html # new.html.erb
       format.xml  { render :xml => @blacklist }
@@ -45,11 +46,12 @@ class BlacklistsController < ApplicationController
   # POST /blacklists
   # POST /blacklists.xml
   def create
-    @blacklist = Blacklist.new(params[:blacklist])
+    ip = retrieve_ip(params[:uid])
+    @blacklist = Blacklist.new(:remote_ip => ip)
 
     respond_to do |format|
       if @blacklist.save
-        vids = Video.find_all_by_remote_ip(params[:blacklist][:remote_ip])
+        vids = Video.find_all_by_remote_ip(ip)
         vids.each do |vid|
           vid.published = false
           vid.save
@@ -90,12 +92,16 @@ class BlacklistsController < ApplicationController
       format.xml  { head :ok }
     end
   end
-
+  
 private
   def authenticate
     authenticate_or_request_with_http_basic do |id, password| 
       id == CREDENTIALS["username"] && password == CREDENTIALS["password"]
     end
+  end
+
+  def retrieve_ip(uid)
+    Video.find_by_uid(uid).remote_ip
   end
 
 end

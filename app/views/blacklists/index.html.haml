@@ -1,19 +1,23 @@
+%h2 Enter the video uid (from the url) to retrieve the IP
+= form_tag "/blacklists" do
+  %label{:for => "uid"} Video UID:
+  %input#uid{:type => "textfield", :name => "uid"}
+  %input#retrieve{:type => "submit", :name => "submit"}
+
+
 %h1 Listing blacklists
 
 %table
   %tr
-    %th Remote ip
+    %th Associated UID
     %th
     %th
     %th
 
   - @blacklists.each do |blacklist|
     %tr
-      %td= blacklist.remote_ip
+      %td= "protected"
       %td= link_to 'Show', blacklist
-      %td= link_to 'Edit', edit_blacklist_path(blacklist)
       %td= link_to 'Destroy', blacklist, :confirm => 'Are you sure?', :method => :delete
 
 %br
-
-= link_to 'New Blacklist', new_blacklist_path

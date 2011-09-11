@@ -1,9 +1,7 @@
 %p#notice= notice
 
-%p
-  %b Remote ip:
-  = @blacklist.remote_ip
+%ul
+- @videos.each do |v|
+  %li= v.uid
 
-= link_to 'Edit', edit_blacklist_path(@blacklist)
-\|
 = link_to 'Back', blacklists_path
