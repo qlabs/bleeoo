@@ -1,4 +1,4 @@
-raw_config = File.read(RAILS_ROOT + "/tmp/credentials.yml")
+raw_config = File.read(RAILS_ROOT + "/lib/credentials.yml")
 CREDENTIALS = YAML.load(raw_config)[RAILS_ENV]
 
 class BlacklistsController < ApplicationController
