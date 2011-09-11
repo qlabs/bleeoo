@@ -46,9 +46,15 @@ class BlacklistsController < ApplicationController
   # POST /blacklists.xml
   def create
     @blacklist = Blacklist.new(params[:blacklist])
+    Rails.logger.debug "====> #{params[:blacklist][:remote_ip]}"
 
     respond_to do |format|
       if @blacklist.save
+        vids = Video.find_all_by_remote_ip(params[:blacklist][:remote_ip])
+        vids.each do |vid|
+          vid.published = false
+          vid.save
+        end
         format.html { redirect_to(@blacklist, :notice => 'Blacklist was successfully created.') }
         format.xml  { render :xml => @blacklist, :status => :created, :location => @blacklist }
       else
