@@ -46,7 +46,6 @@ class BlacklistsController < ApplicationController
   # POST /blacklists.xml
   def create
     @blacklist = Blacklist.new(params[:blacklist])
-    Rails.logger.debug "====> #{params[:blacklist][:remote_ip]}"
 
     respond_to do |format|
       if @blacklist.save
