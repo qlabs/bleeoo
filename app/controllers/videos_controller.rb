@@ -37,7 +37,7 @@ class VideosController < ApplicationController
   # the UUID of a video.  When the callback is made, the video uid is in the Framey
   # session data so that this object can be looked up and 
   def create
-    if video = Video.create(:uid => params[:video_uid], :ip_address => request.remote_ip)
+    if video = Video.create(:uid => params[:video_uid], :remote_ip => request.remote_ip)
       @success = true
       
       # create the URL of the video
