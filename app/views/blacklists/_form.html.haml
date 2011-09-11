@@ -1,0 +1,13 @@
+= form_for @blacklist do |f|
+  -if @blacklist.errors.any?
+    #error_explanation
+      %h2= "#{pluralize(@blacklist.errors.count, "error")} prohibited this blacklist from being saved:"
+      %ul
+        - @blacklist.errors.full_messages.each do |msg|
+          %li= msg
+
+  .field
+    = f.label :remote_ip
+    = f.text_field :remote_ip
+  .actions
+    = f.submit 'Save'

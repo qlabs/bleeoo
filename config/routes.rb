@@ -1,5 +1,7 @@
 Bleeoo::Application.routes.draw do
   
+  resources :blacklists
+
   # resources :videos, :only => [:index,:create,:show] do
   #   member do
   #     match "callback"

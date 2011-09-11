@@ -121,7 +121,8 @@ class VideosController < ApplicationController
   
   def block_blacklisted_ips
     ip = request.remote_ip
-    if User.find_by_ip_address(ip)
+    bl =  Blacklist.all.collect {|bl| bl.remote_ip }
+    if bl.include? ip
       Rails.logger.debug "Caught a blocked IP ========> #{ip}"
       redirect_to "http://www.youtube.com/watch?v=QH2-TGUlwu4"
     end
