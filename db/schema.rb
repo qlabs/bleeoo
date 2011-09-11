@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110909183418) do
+ActiveRecord::Schema.define(:version => 20110911195857) do
 
   create_table "videos", :force => true do |t|
     t.string   "uid"
@@ -23,6 +23,7 @@ ActiveRecord::Schema.define(:version => 20110909183418) do
     t.string   "title"
     t.string   "short_link"
     t.boolean  "published",            :default => false
+    t.string   "remote_ip"
   end
 
 end
