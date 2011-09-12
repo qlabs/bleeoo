@@ -1,6 +1,3 @@
-raw_config = File.read(RAILS_ROOT + "/lib/credentials.yml")
-CREDENTIALS = YAML.load(raw_config)[RAILS_ENV]
-
 class BlacklistsController < ApplicationController
 
   before_filter :authenticate
@@ -96,7 +93,7 @@ class BlacklistsController < ApplicationController
 private
   def authenticate
     authenticate_or_request_with_http_basic do |id, password| 
-      id == CREDENTIALS["username"] && password == CREDENTIALS["password"]
+      id == ENV["username"] && password == ENV["password"]
     end
   end
 
