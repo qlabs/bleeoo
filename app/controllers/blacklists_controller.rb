@@ -93,7 +93,7 @@ class BlacklistsController < ApplicationController
 private
   def authenticate
     authenticate_or_request_with_http_basic do |id, password| 
-      id == ENV["username"] && password == ENV["password"]
+      id == ENV["USERNAME"] && password == ENV["PASSWORD"]
     end
   end
 
